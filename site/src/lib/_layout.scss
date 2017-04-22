@@ -1,0 +1,20 @@
+$small: 480px;
+$medium: 768px;
+$large: 992px;
+
+@mixin respond-to($query) {
+  @media screen and (max-width: $query) {
+    @content;
+  }
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-left: 50px;
+  padding-right: 50px;
+  @include respond-to($small) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

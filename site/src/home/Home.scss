@@ -1,0 +1,23 @@
+.Home {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home img {
+  margin-bottom: 40px;
+}
+
+.Typing {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 700px) {
+  .Home img {
+    max-width: 300px;
+  }
+}

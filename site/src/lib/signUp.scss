@@ -1,0 +1,36 @@
+@import 'src/lib/_color.scss';
+@import 'src/lib/_layout.scss';
+
+.SignUp {
+  height: 50px;
+  display: flex;
+
+  .email {
+    margin-top: 40px;
+    width: 300px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(52,52,52,.5);
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 4px solid $main;
+  }
+
+  .email:focus {
+    outline: none;
+  }
+
+  .button {
+    margin-top: 20px;
+    padding: 15px 60px;
+    border-radius: 8px;
+    border: 4px solid $main;
+    background-color: white;
+  }
+
+  .button:hover {
+    padding: 14px 58px;
+    border: 6px solid $main;
+  }
+}

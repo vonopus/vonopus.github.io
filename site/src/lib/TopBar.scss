@@ -1,0 +1,30 @@
+@import 'src/lib/_color.scss';
+@import 'src/lib/_layout.scss';
+
+.TopBar_wrapper {
+  @include wrapper;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TopBar_brand {
+  margin-top: 20px;
+}
+
+.TopBar_links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+
+  li + li {
+    margin-left: 10px;
+  }
+
+a {
+  margin-left: 20px;
+}
+}
